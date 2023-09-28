@@ -1,0 +1,380 @@
+/* poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section {
+    padding-top: 1%;
+}
+/* root */
+:root {
+    --default-color: #6b6b6b;
+    --btn-color: #bb2649;
+}
+/* header */
+
+/* navbar */
+header {
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+nav {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.logo {
+    max-width: 220px;
+}
+ul li{
+    display: inline-block;
+    padding: 8px;
+}
+ul li::after {
+content: "";
+height: 3px;
+width: 0%;
+background: #fff3f3;
+display: block;
+margin: auto;
+border-radius: 20px;
+transition: .3s ease-in-out;
+}
+ul li:hover::after {
+    width: 100%;
+}
+ul li a {
+    font-weight: 500;
+    color: var(--default-color);
+}
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+}
+.fa-xmark {
+    padding: 30px 15px;
+}
+/* navbar END */
+
+.main-heading {
+    width: 70%;
+    margin: 5% auto;
+}
+.heading-col {
+    flex-basis: 50%;
+}
+.left {
+    padding-right: 10%;
+}
+.heading-col h1 {
+    font-size: 38px;
+    letter-spacing: .4px;
+    font-weight: 600;
+    line-height: 46px;
+}
+.heading-col p {
+    color: var(--default-color);
+    margin: 30px 0;
+}
+.heading-col .btn {
+    border-radius: 170px;
+    background: var(--btn-color);
+    color: #fff;
+    padding: 10px 40px;
+    display: inline-block;
+    margin-top: 5px;
+    box-shadow: 0 20px 20px -15px rgba(144,40,64,.5);
+    transition: .2s ease-in-out;
+}
+.heading-col .btn:hover {
+    transform: translateY(-5px);
+}
+.heading-col img {
+    width: 100%;
+}
+.layer {
+    background-image: url(../images/layer3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+/* access section */
+.section-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.section-info {
+    text-align: center;
+    margin-bottom: 3%;
+}
+/* section title and section info (selector) */
+.access {
+    width: 70%;
+    margin: auto;
+}
+.access-col {
+    flex-basis: 24%;
+    text-align: center;
+    background: #fef6f6;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    margin-bottom: 5%;
+}
+.access-col:hover {
+    transform: translateY(-5px);
+    background: #c4e2ce;
+}
+.access-col img {
+    height: 220px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.access-col h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+/* website design */
+.web-design {
+    width: 70%;
+    margin: auto;
+}
+.web-col {
+    flex-basis: 31%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.web-col .card{
+    display: inline-block;
+    position: relative;
+}
+.web-col .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+}
+.web-col .card .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.web-col .card:hover .layer {
+    opacity: .7;
+}
+.layer a {
+    font-size: 2rem;
+    color: #fff;
+}
+.web-col h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+    text-align: center;
+    display: block;
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background: #ffe4ea;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 5%;
+}
+.line .btn {
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #ffe4ea;
+    background: #fff;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    font-size: 1.1rem;
+    letter-spacing: .4px;
+    font-weight: 500;
+}
+.btn:hover {
+    background: var(--default-color);
+    color: #fff;
+}
+/* footer*/
+footer {
+    background-color: #f8f8f8;
+      }
+.start {
+    align-items: start;
+    width: 70%;
+    margin:auto;
+    padding: 5% 0;
+}
+.footer-col:first-child{
+    flex: 50%;
+}
+.footer-col:first-child p{
+    font-size: 1.2rem;
+    color: var(--default-color);
+    margin-bottom: 2%;
+}
+.footer-col {
+    flex-basis: 25%;
+}
+.footer-col img{
+    margin-bottom: 3%;
+}
+.footer-col h3 {
+    margin-bottom: 5%;
+}
+.footer-col a{
+display: block;
+margin-bottom: 3%;
+transition: .3s ease-in-out;
+font-size: 15px;
+}
+.footer-col a:hover {
+    color: var(--btn-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbar responsive */
+@media (max-width:1300px) {
+    .fa-solid {
+        display: block;
+    }
+    ul li {
+        display: block;
+        padding: 10px 15px;
+    }
+    .navlinks {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        background: rgb(186, 255, 249);
+        height: 100vh;
+        z-index: 2;
+        transition: .4s;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .main-heading {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 15%;
+    }
+    nav {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .heading-col {
+        text-align: center;
+    }
+    .left {
+        padding-right: 0;
+    }
+    .main-heading .layer {
+        margin-top: 25%;
+    }
+    .heading-col h1 {
+        font-size: 35px;
+    }
+    .access {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .access-col {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    .section-title {
+        margin-top: 10%;
+    }
+    .section-info {
+        margin-bottom: 10%;
+    }
+    .web-design {
+        width: 100%;
+        padding: 1% 20px;
+    }
+    .web-col {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .card {
+        width: 100%;
+    }
+    .line {
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    .line .btn {
+        height: 40px;
+        width: 180px;
+    }
+
+    footer h3{
+        margin-top: 15%;
+    }
+    .start {
+        padding: 10% 5%;
+        width: 100%;
+    }
+}
